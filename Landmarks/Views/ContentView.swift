@@ -15,4 +15,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        // Add the model object to the environment, which makes the obj available to any subview
+        .environment(ModelData())
 }

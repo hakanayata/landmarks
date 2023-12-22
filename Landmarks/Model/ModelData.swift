@@ -7,8 +7,15 @@
 
 import Foundation
 
-// Create an array of landmarks initialized from landmarkData.json
-var landmarks: [Landmark] = load("landmarkData.json")
+// Use observation for storage; Observable() macro
+// With observation, a view in SwiftUI can support data changes without using property wrappers or bindings
+// SwiftUI updates a view only when an observable property changes and the view's body reads the property directly
+@Observable
+class ModelData {
+    // Create an array of landmarks initialized from landmarkData.json
+    var landmarks: [Landmark] = load("landmarkData.json")
+}
+
 
 // Fetch JSON data with a given name from the app's main bundle
 // Load method relies on the return type's conformance to the Decodable protocol,

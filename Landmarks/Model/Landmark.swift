@@ -16,12 +16,13 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
     // Private because users care only about the image itself
     private var imageName: String
     var image: Image {
         Image(imageName)
     }
-    // Private because we'll use it only to create a public computed property; locationCoordinate
+//     Private because we'll use it only to create a public computed property; locationCoordinate
     private var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
