@@ -20,6 +20,7 @@
 		FFFF0FDC2B35802D00669591 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF0FDB2B35802D00669591 /* LandmarkList.swift */; };
 		FFFF0FDE2B35828E00669591 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF0FDD2B35828E00669591 /* LandmarkDetail.swift */; };
 		FFFF0FE02B35EAAD00669591 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF0FDF2B35EAAD00669591 /* FavoriteButton.swift */; };
+		FFFF0FE42B3B90C400669591 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF0FE32B3B90C400669591 /* HexagonParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		FFFF0FDB2B35802D00669591 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		FFFF0FDD2B35828E00669591 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		FFFF0FDF2B35EAAD00669591 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		FFFF0FE32B3B90C400669591 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		FFFF0FB22B34DDAA00669591 = {
 			isa = PBXGroup;
 			children = (
+				FFFF0FE32B3B90C400669591 /* HexagonParameters.swift */,
 				FFFF0FBD2B34DDAA00669591 /* Landmarks */,
 				FFFF0FBC2B34DDAA00669591 /* Products */,
 			);
@@ -209,6 +212,7 @@
 				FFFF0FCF2B34E5D800669591 /* MapView.swift in Sources */,
 				FFFF0FBF2B34DDAA00669591 /* LandmarksApp.swift in Sources */,
 				FFFF0FE02B35EAAD00669591 /* FavoriteButton.swift in Sources */,
+				FFFF0FE42B3B90C400669591 /* HexagonParameters.swift in Sources */,
 				FFFF0FDC2B35802D00669591 /* LandmarkList.swift in Sources */,
 				FFFF0FDE2B35828E00669591 /* LandmarkDetail.swift in Sources */,
 				FFFF0FCD2B34E4E700669591 /* CircleImage.swift in Sources */,
