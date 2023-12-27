@@ -12,8 +12,10 @@ import Foundation
 // SwiftUI updates a view only when an observable property changes and the view's body reads the property directly
 @Observable
 class ModelData {
-    // Create an array of landmarks initialized from landmarkData.json
+    // Create an array of landmarks initialized from landmarkData.json and load the landmarks into our model
     var landmarks: [Landmark] = load("landmarkData.json")
+    // Create an array of hikes initialized from hikeData.json and load the hikes into our model
+    var hikes: [Hike] = load("hikeData.json")
 }
 
 
