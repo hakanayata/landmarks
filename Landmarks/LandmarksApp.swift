@@ -17,5 +17,9 @@ struct LandmarksApp: App {
                 // Supply a model instance to ContentView using the environment(_:) modifier
                 .environment(modelData)
         }
+        
+        #if os(watchOS)
+        WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
+        #endif
     }
 }
