@@ -16,6 +16,7 @@ class ModelData {
     var landmarks: [Landmark] = load("landmarkData.json")
     // Create an array of hikes initialized from hikeData.json and load the hikes into our model
     var hikes: [Hike] = load("hikeData.json")
+    var profile = Profile.default
     
     var features: [Landmark] {
         landmarks.filter { $0.isFeatured }
