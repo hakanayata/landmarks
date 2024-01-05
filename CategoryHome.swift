@@ -15,12 +15,14 @@ struct CategoryHome: View {
         NavigationSplitView {
             // Display the categories in Landmarks using a List
             List {
-                modelData.features[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
-                // Extend content to the edges of the display
+//                modelData.features[0].image
+//                    .resizable()
+//                    .scaledToFill()
+//                    .frame(height: 200)
+//                    .clipped()
+//                // Extend content to the edges of the display
+//                    .listRowInsets(EdgeInsets())
+                PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
                     .listRowInsets(EdgeInsets())
                 
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in

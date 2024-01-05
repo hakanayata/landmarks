@@ -30,6 +30,9 @@ struct Landmark: Hashable, Codable, Identifiable {
     var image: Image {
         Image(imageName)
     }
+    var featureImage: Image? {
+        isFeatured ? Image(imageName + "_feature") : nil
+    }
 //     Private because we'll use it only to create a public computed property; locationCoordinate
     private var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
